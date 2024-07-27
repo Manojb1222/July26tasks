@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent and child div using absolute position</title>
+    <style>
+        .container{
+            width:600px;
+            height:600px;
+            border:2px solid;
+            position:relative;
+        }
+        #Parent{
+            width:400px;
+            height:400px;
+            border: 2px solid brown;
+            position:relative;
+            top:20px;
+            left:20px;
+
+        }
+        .child{
+            width:100px;
+            height:100px;
+            border: 1px solid green;
+            position:absolute;
+            bottom:0;
+            right:0;
+        
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div class="container">container
+        <div Id="Parent">Parent
+            <div class="child">child</div>
+        </div>
+       </div>
+    </div><br><br>
+    <div>
+        Here first i used container box,inside the container i created parent div by a position relative,relative is used because child div move inside parent it won't go outside the parent,inside the parent i created child div by using position:absolute bottom right corner.
+    </div>
+</body>
+</html>
